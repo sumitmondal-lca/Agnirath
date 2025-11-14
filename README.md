@@ -1,1 +1,3 @@
-# Agnirath
+Agnirath
+---
+a aerospace and research website ( https://sumitmondal-lca.github.io/agnirath )
