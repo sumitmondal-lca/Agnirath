@@ -1,0 +1,1059 @@
+/* inter fonts register */
+@font-face {
+    font-family: 'Inter Light';
+    src: url('../fonts/Inter18pt-Light.eot');
+    src: url('../fonts/Inter18pt-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter18pt-Light.woff2') format('woff2'),
+        url('../fonts/Inter18pt-Light.woff') format('woff'),
+        url('../fonts/Inter18pt-Light.ttf') format('truetype'),
+        url('../fonts/Inter18pt-Light.svg#Inter18pt-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Medium';
+    src: url('../fonts/Inter18pt-Medium.eot');
+    src: url('../fonts/Inter18pt-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter18pt-Medium.woff2') format('woff2'),
+        url('../fonts/Inter18pt-Medium.woff') format('woff'),
+        url('../fonts/Inter18pt-Medium.ttf') format('truetype'),
+        url('../fonts/Inter18pt-Medium.svg#Inter18pt-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('../fonts/Inter18pt-Bold.eot');
+    src: url('../fonts/Inter18pt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter18pt-Bold.woff2') format('woff2'),
+        url('../fonts/Inter18pt-Bold.woff') format('woff'),
+        url('../fonts/Inter18pt-Bold.ttf') format('truetype'),
+        url('../fonts/Inter18pt-Bold.svg#Inter18pt-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter SemiBold';
+    src: url('../fonts/Inter18pt-SemiBold.eot');
+    src: url('../fonts/Inter18pt-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter18pt-SemiBold.woff2') format('woff2'),
+        url('../fonts/Inter18pt-SemiBold.woff') format('woff'),
+        url('../fonts/Inter18pt-SemiBold.ttf') format('truetype'),
+        url('../fonts/Inter18pt-SemiBold.svg#Inter18pt-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('../fonts/Inter18pt-Regular.eot');
+    src: url('../fonts/Inter18pt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter18pt-Regular.woff2') format('woff2'),
+        url('../fonts/Inter18pt-Regular.woff') format('woff'),
+        url('../fonts/Inter18pt-Regular.ttf') format('truetype'),
+        url('../fonts/Inter18pt-Regular.svg#Inter18pt-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ROOT ELEMENT*/
+:root {
+    --font-16: 16px;
+    --font-18: clamp(1rem, 0.9678rem + 0.1338vw, 1.125rem);
+    --font-90: clamp(3.4375rem, 2.8742rem + 2.3411vw, 5.625rem);
+    --font-85: clamp(3.125rem, 2.5617rem + 2.3411vw, 5.3125rem);
+    --font-36: clamp(1rem, 0.6781rem + 1.3378vw, 2.25rem);
+    --font-30: clamp(1rem, 0.7747rem + 0.9365vw, 1.875rem);
+    --inter-regular: 'Inter Regular';
+    --inter-Light: 'Inter Light ';
+    --inter-Medium: 'Inter Medium';
+    --inter-SemiBold: 'Inter SemiBold';
+    --inter-Bold: 'Inter Bold';
+    --bgc-black: #000000;
+    --background-gradient: rgb(7, 7, 7), rgb(17, 17, 17);
+
+}
+
+
+
+/*_________________________________________________Reset Css Start_______________________________________*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--inter-regular);
+    font-size: 16px;
+    color: #f70707;
+    font-weight: 400;
+    line-height: 1.3;
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/*___________________________________________________Reset Css End________________________________________*/
+
+
+
+
+/*__________________________________________________Utility Css Start_____________________________________*/
+/* .container{max-width: 1300px;} */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*__________________________________________________Utility Css End________________________________________*/
+
+.heading h2 {
+    font-size: var(--font-90);
+    font-family: var(--inter-SemiBold);
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+    margin: auto;
+    margin-bottom: clamp(2.5rem, 2.0171rem + 2.0067vw, 4.375rem);
+    text-align: center;
+    background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 1) 16%, rgba(214, 44, 72, 1) 65%, rgba(34, 29, 80, 1) 89%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* #cursor {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 0% 0%, rgb(255 45 45 / 30%) -17%, rgb(255 50 50 / 0%) 100%);
+    transition: background-image 0.5s ease-in-out;
+    z-index: 9999;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    animation: float 10s ease-in-out infinite;
+} */
+/* The custom cursor elements start*/
+.cursor-dot,
+.cursor-ring {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    /* don't block clicks */
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+    z-index: 9999;
+    mix-blend-mode: screen;
+}
+
+.cursor-dot {
+    /* width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: #e21738; */
+    width: 46px;
+    height: 46px;
+    border-radius: 999px;
+    border: 2px solid rgba(226, 23, 56, 0.28);
+    background: radial-gradient(circle at 30% 30%, rgba(226, 23, 56, 0.15), transparent 40%);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    transition: transform 0.18s cubic-bezier(.2, .9, .2, 1), opacity 0.18s;
+    transform-origin: center center;
+}
+
+.cursor-ring {
+    /* width: 46px;
+    height: 46px;
+    border-radius: 999px;
+    border: 2px solid rgba(226,23,56,0.28);
+    background: radial-gradient(circle at 30% 30%, rgba(226,23,56,0.15), transparent 40%); */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, rgb(255 45 45 / 45%) -50%, rgb(255 50 50 / 0%) 70%);
+    transition: background-image 0.5s ease-in-out;
+    transition: transform 0.28s cubic-bezier(.2, .9, .2, 1), opacity 0.8s;
+    transform-origin: center center;
+    animation: cursoranim 10s ease-in-out infinite;
+}
+
+@keyframes cursoranim {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+}
+
+/* The custom cursor elements end*/
+
+
+
+/* custom style */
+.parent-wrapper {
+    background: linear-gradient(128deg, var(--background-gradient));
+    background-color: var(--bgc-black);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.parent-wrapper::after {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: radial-gradient(circle at 50% -7%, #e60d2a -10%, rgba(255, 50, 50, 0) 30%);
+    z-index: -1;
+    transition: background-image 0.5s ease-in-out;
+    animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: translate(0, 50px) scale(1.7);
+        opacity: 1;
+    }
+}
+
+/* header css start */
+header .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 15px 0;
+}
+
+header .wrapper .logo-block {
+    width: 240px;
+}
+
+header .wrapper .stellarnav ul li.active a {
+    color: #dd1037;
+}
+
+header .wrapper .stellarnav ul li a {
+    font-size: var(--font-18);
+    font-family: var(--inter-Medium);
+    font-weight: 500;
+    line-height: 1.3;
+    color: #fff;
+}
+
+header .wrapper .stellarnav ul li.active>ul li a,
+header .wrapper .stellarnav ul li>ul li a {
+    color: #000;
+}
+
+
+header .wrapper .stellarnav ul .intership-btn {
+    display: none;
+}
+
+header .wrapper .intership-btn {
+    margin-left: auto;
+    position: relative;
+    background-image: -moz-linear-gradient(4deg, rgb(228, 16, 56) 0%, rgb(12, 12, 12) 56%);
+    background-image: -webkit-linear-gradient(4deg, rgb(228, 16, 56) 0%, rgb(12, 12, 12) 56%);
+    background-image: -ms-linear-gradient(4deg, rgb(228, 16, 56) 0%, rgb(12, 12, 12) 56%);
+    background-size: 101%;
+    border-radius: 9px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s ease;
+    border: 1px solid transparent;
+}
+
+header .wrapper .intership-btn a {
+    font-size: var(--font-18);
+    font-family: var(--inter-Medium);
+    font-weight: 500;
+    line-height: 1.3;
+    color: #fff;
+    white-space: nowrap;
+    padding: 12px 22px 14px;
+}
+
+header .wrapper .intership-btn:hover {
+    background-size: 150%;
+    border: 1px solid #83838331;
+    transition: all 0.5s ease;
+}
+
+header .wrapper .intership-btn a::after {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    height: 100px;
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.404);
+    rotate: 25deg;
+    animation: shiny 3s ease-in-out infinite forwards;
+    z-index: -1;
+}
+
+@keyframes shiny {
+    0% {
+        left: -100%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+/* header css end */
+
+
+/* banner css start */
+.banner {
+    height: 100vh;
+}
+
+.banner .text-block {
+    margin: auto;
+    text-align: center;
+    padding: clamp(5rem, 3.5514rem + 6.0201vw, 10.625rem) 0;
+}
+
+.banner .text-block h1 {
+    font-size: var(--font-90);
+    font-family: var(--inter-SemiBold);
+    font-weight: 600;
+    line-height: 1.2;
+    max-width: 700px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+.banner .text-block h1>span {
+    display: block;
+    font-size: var(--font-85);
+    font-family: var(--inter-Bold);
+    font-weight: 800;
+    background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 1) 16%, rgba(214, 44, 72, 1) 65%, rgba(34, 29, 80, 1) 89%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner .text-block p {
+    font-size: var(--font-36);
+    font-family: var(--inter-regular);
+    font-weight: 400;
+    color: #fff;
+    line-height: 50px;
+    margin-top: clamp(2.8125rem, 2.2492rem + 2.3411vw, 5rem);
+}
+
+/* banner css end */
+
+/* satelite image css start */
+.satellite-image {
+    height: clamp(21.875rem, 14.3102rem + 31.4381vw, 51.25rem);
+}
+
+/* satelite image css end */
+
+/* our mission section css start */
+.our-mission {
+    background-color: var(--bgc-black);
+    padding: 70px 0;
+}
+
+.our-mission .heading h2 {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.our-mission .our-mission-cards>.row {
+    justify-content: center;
+}
+
+.our-mission .our-mission-cards>.row [class^='col-'] {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.our-mission .our-mission-cards .mission-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 30px 15px 30px;
+    height: 100%;
+    box-shadow: #db1237d2 6px 9px 11px 0px, rgba(0, 0, 0, 0.226) 0px 6px 6px;
+}
+
+.our-mission .our-mission-cards .mission-card .img-block {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.our-mission .our-mission-cards .mission-card p {
+    font-size: var(--font-18);
+    font-family: var(--inter-Medium);
+    font-weight: 500;
+    color: #000;
+    line-height: 1.6;
+    padding-top: 15px;
+}
+
+/* our mission section css end */
+
+/* vission and projects section strat*/
+.vision-and-projects-gradient-wrapper{
+    border-radius: 20px;
+    background: linear-gradient(180deg,rgba(228, 16, 56, 0.94) -90%, rgba(0, 0, 0, 1) 50%, rgba(228, 16, 56, 0.92) 180%);
+}
+/*  our vission start */
+.our-vision {
+    padding: 60px 0 20px 0;
+}
+
+.our-vision .heading h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.our-vision .parent-block {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 70px;
+}
+
+.our-vision .parent-block .left-block,
+.our-vision .parent-block .right-block {
+    width: 50%;
+}
+
+.our-vision .parent-block .left-block p {
+    font-size: 20px;
+    font-family: var(--inter-Medium);
+    font-weight: 400;
+    line-height: 1.7;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.our-vision .parent-block .left-block .know-more-btn a {
+    font-size: 18px;
+    font-family: var(--inter-Medium);
+    font-weight: 500;
+    line-height: 1.3;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 12px 26px;
+    border-radius: 8px;
+    display: inline-block;
+    background: linear-gradient(180deg, rgba(228, 16, 56, 0.94) 0%, rgba(77, 13, 26, 0.88) 91%);
+}
+
+.our-vision .parent-block .right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 30px 0 0 0;
+    margin-top: -130px;
+}
+
+.our-vision .parent-block .right-block>img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.our-vision .parent-block .right-block>img.img-1 {
+    align-self: flex-start;
+}
+
+/*  our vission end */
+
+/* our projects css start */
+.our-projects{
+    padding: 0 0 50px 0;
+}
+.our-projects .heading h2 {
+    text-align: left;
+    margin-bottom: 40px;
+}
+.our-projects .projects-slider{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+}
+.our-projects .projects-slider > .slick-list.draggable{
+    padding: 0 0 35px 0px;
+}
+.our-projects .projects-slider .slick-dots{
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.our-projects .projects-slider .slick-dots > li > button{
+    font-size: 0;
+    border: none;
+    outline: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgb(141, 141, 141);
+}
+.our-projects .projects-slider .slick-dots > li.slick-active > button{
+    background-color: red;
+}
+.our-projects .projects-slider .project-card {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 15px 17.64px 3.36px rgba(0, 0, 0, 0.38);
+    max-width: clamp(22.5rem, 23.6589rem + -4.8161vw, 18rem);
+    margin: 0 15px;
+}
+
+.our-projects .projects-slider .project-card .img-block{
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 20px 0 0;
+    height: 280px;
+}
+.our-projects .projects-slider .project-card .text-block{
+    padding: 25px 20px;
+    height: 185px;
+}
+.our-projects .projects-slider .project-card .text-block h2{
+    font-size: 36px;
+    font-family: var(--inter-Bold);
+    font-weight: 600;
+    line-height: 1.3;
+    color: #dd1037;
+    text-align: center;
+}
+.our-projects .projects-slider .project-card .text-block p{
+    font-size: var(--font-18);
+    font-family: var(--inter-regular);
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000;
+    text-align: center;
+    padding-top: 12px;
+}
+/* our projects css end */
+/* vission and projects section end*/
+
+/* director css start */
+.director{
+    background-color: var(--bgc-black);
+    padding: 50px 0 30px 0;
+}
+    .director .director-heading h2{
+        font-size: clamp(2.1875rem, 1.7851rem + 1.6722vw, 3.75rem);
+        font-family: var(--inter-SemiBold);
+        font-weight: 600;
+        line-height: 1.3;
+        color: #dbd6d6;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+.director .director-block{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.director .director-block img{
+    height: 450px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.director .director-block p{
+    font-size: clamp(1rem, 0.8712rem + 0.5351vw, 1.5rem);
+    font-family: var(--inter-regular);
+    font-weight: 400;
+    line-height: 1.6;
+    color: #979797;
+}
+
+.director .director-info h2{
+    font-size: 30px;
+    font-family: var(--inter-regular);
+    font-weight: 400;
+    line-height: 1.3;
+    color: #bf1515;
+    padding: 20px 0 8px 0;
+}
+.director .director-info p{
+    font-size: 18px;
+    font-family: var(--inter-regular);
+    font-weight: 400;
+    line-height: 1.3;
+    color: #dbd6d6;
+}
+/* director css end */
+
+/* research and developmentv page css start */
+/* advance research css start */
+.research {
+    padding: 80px 0;
+    position: relative;
+}
+
+.research::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 80% 39%, #e60d2a -45%, rgba(255, 50, 50, 0) 25%),
+        radial-gradient(circle at 27% 65%, #e60d2a -43%, rgba(255, 50, 50, 0) 24%);
+    z-index: -1;
+}
+
+.research .wrapper .heading h2 {
+    font-size: clamp(2.1875rem, 1.7046rem + 2.0067vw, 4.0625rem);
+}
+
+.research .wrapper .content-block p {
+    font-size: var(--font-18);
+    font-family: var(--inter-regular);
+    font-weight: 400;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #c9c9c991;
+    padding: 0 0 25px;
+}
+
+/* advance research css end */
+
+
+/* projects group css start */
+.projects {
+    padding: 50px 0;
+    background: linear-gradient(128deg, var(--background-gradient));
+}
+
+.projects .heading h2 {
+    font-size: clamp(2.1875rem, 1.7046rem + 2.0067vw, 4.0625rem);
+}
+
+.projects .projects-group ul li {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    gap: 60px;
+    padding-bottom: 60px;
+}
+
+.projects .projects-group ul li:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.projects .projects-group ul li .img-block {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 30%;
+}
+
+.projects .projects-group ul li .text-block {
+    width: 70%;
+}
+
+.projects .projects-group ul li .text-block h3 {
+    font-size: 20px;
+    font-family: var(--inter-Medium);
+    font-weight: 500;
+    line-height: 1.3;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.projects .projects-group ul li .text-block h3>span {
+    font-size: 40px;
+    font-family: var(--inter-Medium);
+    font-weight: 500;
+    line-height: 1.3;
+    color: #dd1037;
+}
+
+.projects .projects-group ul li .text-block p {
+    font-size: var(--font-16);
+    font-weight: 400;
+    font-family: var(--inter-regular);
+    line-height: 1.5;
+    color: #808080;
+}
+
+.projects .projects-group .upcomming-projects ul li:nth-of-type(1) .text-block h3 {
+    font-size: 16px;
+}
+
+.projects .projects-group .upcomming-projects ul li:last-child {
+    padding-bottom: 0;
+}
+
+/* projects group css end */
+/* research and developmentv page css start */
+
+
+/* courses page css start */
+.coureses>header {
+    background-color: var(--bgc-black);
+}
+
+.coureses .coureses-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 55vh;
+}
+
+.coureses .coureses-banner .container {
+    height: 100%;
+}
+
+
+.coureses .coureses-banner .text-block {
+    padding: 60px 0 40px 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coureses .coureses-banner .text-block h1 {
+    font-size: clamp(2.5rem, 1.7757rem + 3.01vw, 5.3125rem);
+    font-family: var(--inter-Medium);
+    font-weight: 500;
+    line-height: 1.3;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.coureses .coureses-banner .text-block h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 5px;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: #dd1037;
+}
+
+.coureses .background-pattern-wrapper {
+    background-color: var(--bgc-black);
+}
+
+.coureses .courses-group {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.coureses .courses-group ul li {
+    margin-bottom: 45px;
+}
+
+.coureses .courses-group ul li .header h2 {
+    font-size: clamp(2.1875rem, 2.0265rem + 0.6689vw, 2.8125rem);
+    font-family: var(--inter-SemiBold);
+    font-weight: 600;
+    line-height: 1.3;
+    color: #dd1037;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.coureses .courses-group ul li .courses-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+
+.coureses .courses-group ul li:nth-of-type(even) .courses-block {
+    flex-direction: row-reverse;
+}
+
+.coureses .courses-group ul li .courses-block .text-block {
+    width: 70%;
+}
+
+.coureses .courses-group ul li .courses-block .text-block p {
+    font-size: var(--font-18);
+    font-family: var(--inter-regular);
+    font-weight: 400;
+    line-height: 1.8;
+    color: #aaaaaa;
+}
+
+.coureses .courses-group ul li .courses-block .img-block {
+    width: 30%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* courses page css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Start */
+footer {
+    background-color: #0e0e0e;
+    padding-top: 80px;
+}
+
+footer .row {
+    justify-content: center;
+}
+
+footer .left-logo-block .logo-block {
+    max-width: 330px;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+}
+
+footer .left-logo-block .form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+footer .left-logo-block .form input {
+    font-family: inherit;
+    font-size: 15px;
+    color: rgb(245, 245, 245);
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: capitalize;
+    width: 50%;
+    background-color: transparent;
+    border: 1.5px solid #656565;
+    padding: 10px 0 10px 15px;
+    border-radius: 8px;
+}
+
+footer .left-logo-block .form input::placeholder {
+    font-family: inherit;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+footer .left-logo-block .form a {
+    font-family: inherit;
+    font-size: 15px;
+    color: #f7f7f7;
+    font-weight: 600;
+    line-height: 1.3;
+    text-transform: capitalize;
+    background-color: #dd1037;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 8px 25px;
+    margin: 0;
+}
+
+footer .left-logo-block .form a i {
+    font-size: 23px;
+    color: #fff;
+}
+
+footer .left-logo-block .social-icon ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+footer .left-logo-block .social-icon ul li a {
+    --w-h: 28px;
+    width: var(--w-h);
+    height: var(--w-h);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .left-logo-block .social-icon ul li a i {
+    font-size: 13px;
+    color: #fff;
+}
+
+footer .footer-menu-content {
+    padding-left: 10px;
+    margin-bottom: 24px;
+}
+
+footer .footer-menu-content h6 {
+    font-family: inherit;
+    font-size: 20px;
+    color: #f1f1f1;
+    font-weight: 800;
+    line-height: 1.3;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+footer .footer-menu-content ul li a {
+    font-family: inherit;
+    font-size: 15px;
+    color: rgb(162, 162, 162);
+    font-weight: 700;
+    line-height: 1.3;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+footer .copy-right-block {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+footer .copy-right-block span {
+    font-family: inherit;
+    font-size: 13px;
+    color: #bbbbbb;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer End */

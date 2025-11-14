@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root {
+    --black-bgc: #1B1B1B;
+    --primary-font: "Bricolage Grotesque", sans-serif;
+    --white-color: #fff;
+    --primary-color: #dc3545;
+    --primary-gradient-color: rgba(255, 45, 45, 0.18);
+    --primary-font-color: rgb(20, 20, 20);
+    --background-gradient: rgb(14 14 14), rgb(18 18 18);
+}
+
+
+/* sidhu-search start */
+.parent-closest{
+    background: linear-gradient(128deg, var(--background-gradient));
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.parent-closest::after{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: 
+    radial-gradient(circle at 20% 20%, var(--primary-gradient-color) 0%, rgba(255, 50, 50, 0) 20%),
+    radial-gradient(circle at 80% 55%, var(--primary-gradient-color) 0%, rgba(255, 50, 50, 0) 25%);
+    transition: background-image 0.5s ease-in-out;
+    animation: float 10s ease-in-out infinite;
+    z-index: -1;
+}
+.sidhu-search {
+    /* background: linear-gradient(128deg, var(--background-gradient)); */
+    padding: 100px 0;
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* z-index: 1; */
+}
+.sidhu-search .search-ai {
+    height: 60vh;
+}
+
+.sidhu-search .search-ai .header h1 {
+    font-family: inherit;
+    font-size: clamp(2.1875rem, 1.7046rem + 2.0067vw, 4.0625rem);
+    font-weight: 800;
+    background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(199, 199, 199, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.sidhu-search .search-ai .header p {
+    font-size: 16px;
+    font-family: inherit;
+    color: rgb(255, 255, 255);
+    line-height: 1.9;
+    text-align: center;
+    margin: 0 auto 90px;
+}
+
+.sidhu-search .search-bar {
+    height: clamp(2.8125rem, 2.6515rem + 0.6689vw, 3.4375rem);
+    width: clamp(18.75rem, 13.9214rem + 20.0669vw, 37.5rem);
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    margin: auto;
+    padding: 0 20px;
+    border-radius: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidhu-search .search-bar p {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    opacity: 90%;
+}
+
+.sidhu-search .search-bar .button {
+    all: unset;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ef0d33;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidhu-search .how-sidhu-works {
+    padding: 120px 0 0 0;
+}
+
+.sidhu-search .how-sidhu-works h1 {
+    font-size: clamp(1.875rem, 1.5048rem + 1.5385vw, 3.3125rem);
+    font-weight: bold;
+    font-family: inherit;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.sidhu-search .how-sidhu-works h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #c20b21;
+}
+
+.sidhu-search .how-sidhu-works p {
+    font-size: clamp(1rem, 0.9678rem + 0.1338vw, 1.125rem);
+    font-family: inherit;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0 75px 0;
+}
+
+.sidhu-search .how-sidhu-works .cards .workscard {
+    max-width: 224px;
+    height: 115px;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    padding: 12px 15px;
+    border: 1px solid #606060;
+    background-color: #232423bf;
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidhu-search .how-sidhu-works .cards .workscard p {
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 0;
+}
+
+/* sidhu-search end */
+
+
+
+/* Footer Start */
+footer {
+    background-color: transparent;
+    padding-top: 80px;
+}
+
+footer .right-logo-block .logo-block {
+    max-width: 330px;
+    padding-bottom: 10px;
+}
+
+footer .right-logo-block .form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+footer .right-logo-block .form input {
+    font-family: inherit;
+    font-size: 15px;
+    color: rgb(245, 245, 245);
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: capitalize;
+    width: 50%;
+    background-color: transparent;
+    border: 1.5px solid #656565;
+    padding: 10px 0 10px 15px;
+    border-radius: 8px;
+}
+
+footer .right-logo-block .form input::placeholder {
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--white-color);
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+footer .right-logo-block .form a {
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--white-color);
+    font-weight: 600;
+    line-height: 1.3;
+    text-transform: capitalize;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 8px 25px;
+    margin: 0;
+}
+
+footer .right-logo-block .form a i {
+    font-size: 23px;
+    color: var(--white-color);
+}
+
+footer .right-logo-block .social-icon ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .right-logo-block .social-icon ul li {
+    --w-h: 28px;
+    width: var(--w-h);
+    height: var(--w-h);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--white-color);
+    border-radius: 50px;
+}
+
+footer .right-logo-block .social-icon ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .right-logo-block .social-icon ul li a i {
+    font-size: 13px;
+    color: var(--white-color);
+}
+
+footer .footer-menu-content {
+    padding-left: 10px;
+}
+
+footer .footer-menu-content h6 {
+    font-family: inherit;
+    font-size: 20px;
+    color: var(--white-color);
+    font-weight: 800;
+    line-height: 1.3;
+    text-transform: capitalize;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+footer .footer-menu-content ul li a {
+    font-family: inherit;
+    font-size: 15px;
+    color: rgb(162, 162, 162);
+    font-weight: 700;
+    line-height: 1.3;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+footer .copy-right-block {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+footer .copy-right-block span {
+    font-family: inherit;
+    font-size: 13px;
+    color: var(--white-color);
+    font-weight: 400;
+    line-height: 1.3;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Footer End */
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: translate(0 ,50px) scale(1.2); 
+        opacity: 1;
+    }
+}
